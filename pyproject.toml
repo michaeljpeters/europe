@@ -18,3 +18,9 @@ members = [
     "carthage",
     "rome",
 ]
+
+[tool.uv.sources]
+sparta = { workspace = true }
+athens = { workspace = true }
+carthage = { workspace = true }
+rome = { workspace = true }
