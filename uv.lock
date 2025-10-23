@@ -1,0 +1,42 @@
+version = 1
+revision = 3
+requires-python = ">=3.11"
+
+[[package]]
+name = "athens"
+version = "0.1.0"
+source = { directory = "athens" }
+
+[[package]]
+name = "carthage"
+version = "0.1.0"
+source = { directory = "carthage" }
+
+[[package]]
+name = "europe"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "athens" },
+    { name = "carthage" },
+    { name = "rome" },
+    { name = "sparta" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "athens", directory = "athens" },
+    { name = "carthage", directory = "carthage" },
+    { name = "rome", directory = "rome" },
+    { name = "sparta", directory = "sparta" },
+]
+
+[[package]]
+name = "rome"
+version = "0.1.0"
+source = { directory = "rome" }
+
+[[package]]
+name = "sparta"
+version = "0.1.0"
+source = { directory = "sparta" }

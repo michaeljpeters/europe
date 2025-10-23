@@ -1,14 +1,20 @@
 [project]
 name = "europe"
-version = "0.1.0"
+version = "0.2.0"
 description = "a collection of european states"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "rome",
+]
+
+[project.optional-dependencies]
+greece = [
     "sparta",
     "athens",
+]
+punic = [
     "carthage",
-    "rome",
 ]
 
 [tool.uv.sources]
