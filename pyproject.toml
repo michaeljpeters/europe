@@ -1,0 +1,15 @@
+[project]
+name = "europe"
+version = "0.1.0"
+description = "a collection of european states"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.uv.workspace]
+members = [
+    "sparta",
+    "athens",
+    "carthage",
+    "rome",
+]
