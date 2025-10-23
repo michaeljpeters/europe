@@ -11,16 +11,8 @@ dependencies = [
     "rome",
 ]
 
-[tool.uv.workspace]
-members = [
-    "sparta",
-    "athens",
-    "carthage",
-    "rome",
-]
-
 [tool.uv.sources]
-sparta = { workspace = true }
-athens = { workspace = true }
-carthage = { workspace = true }
-rome = { workspace = true }
+sparta = { path = 'sparta/' }
+athens = { path = 'athens/' }
+carthage = { path = 'carthage/' }
+rome = { path = 'rome/' }
